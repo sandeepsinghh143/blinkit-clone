@@ -1,0 +1,6 @@
+.category img{
+    width: 100%;
+}
+.category img:hover{
+    scale: 1.1;
+}

@@ -1,0 +1,12 @@
+.slides{
+    margin-top: 20px;
+    display: flex;
+    gap:20px;
+    overflow: auto;
+    margin: auto 15px;
+}
+
+.slides::-webkit-scrollbar{
+    display: none;
+}
+

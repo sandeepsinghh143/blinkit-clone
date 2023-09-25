@@ -1,0 +1,136 @@
+footer{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px; */
+    position: relative;
+    top:150px;
+    padding: 20px;
+    color: #868686;
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+.self-credit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.heart{
+    color: red;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.useful-links{
+    width: 30%;
+}
+.categories-links{
+    width: 65%;
+}
+
+.useful-links p, .categories-links p{
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.categories-links p span{
+    color: rgb(12, 131, 31);
+    font-weight: 400;
+    font-size: 15px;
+}
+.links-section{
+    display: flex;
+    justify-content: space-between;
+}
+.useful-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.categories-flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.footer-icons{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.credit{
+    width: 30%;
+    text-align: left;
+}
+.download{
+    width: 30%;
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    gap:10px;
+    align-items: center;
+    color: #777777;
+}
+
+.social-icons{
+    width: 25%;
+    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    color: black;
+}
+
+.twitter{
+    font-size: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .links-section{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .useful-links{
+        width: 100%;
+    }
+
+    .categories-links{
+        width: 100%;
+    }
+
+    .footer-icons{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .credit, .download, .social-icons{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .categories-flex{
+        flex-wrap: wrap;
+        gap:50px;
+    }
+}

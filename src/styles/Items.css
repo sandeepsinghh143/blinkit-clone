@@ -1,0 +1,38 @@
+.items{
+    margin: 15px ;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.see-all{
+    color: rgb(12, 131, 31);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.category-name{
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.all-items{
+    margin-top: 15px;
+    display: flex;
+    gap:15px;
+    overflow: auto;
+}
+
+.all-items::-webkit-scrollbar{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .all-items{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

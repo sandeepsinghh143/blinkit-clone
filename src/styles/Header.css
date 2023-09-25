@@ -1,0 +1,173 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+    height: 86px;
+    z-index: 1000;
+}
+
+.logo{
+    width: 180px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgb(238, 238, 238);
+}
+
+.location-title{
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 6px;
+    letter-spacing: 1.5px;
+}
+
+.location-desc{
+    font-size: 14px;
+}
+
+.location-desc svg{
+    transform: translate(5px, 2px);
+}
+
+.search-bar{
+    border:1px solid rgb(238, 238, 238);
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    width: 44%;
+    border-radius: 5px;
+    height: 46px;
+    padding:1rem;
+    gap:10px;
+}
+
+.search-bar svg{
+    font-size: 25px;
+}
+
+.search-bar input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.login{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(54, 54, 54);
+    margin: auto 0;
+}
+
+.cart{
+    width: 112px;
+    font-size: 14px;
+    color:#fff;
+    height: 52px;
+    background: rgb(12, 131, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+    border-radius: 8px;
+    gap: 0.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cart svg{
+    font-size: 1.5rem;
+}
+
+.container{
+    display: none;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+/* =============MEDIA QUERIES APPLIED HERE===================== */
+
+@media screen and (max-width: 992px){
+    .search-bar{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        padding: 25px;
+
+    }
+.search-bar, .login, .cart{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    border-radius:0;
+    z-index: 100;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background-color: rgb(135, 219, 96);
+    }
+
+    .search-bar{
+        top:86px;
+        height: 50px;
+    }
+    .login{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top:136px;
+        height: 50px;
+        text-align: center;
+        color: white;
+    }
+    .cart{
+        top:186px;
+        height: 50px;
+    }
+
+    .container{
+        display: inline-block;
+    }
+    
+    .hidden{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .location-title{
+        font-size: 12px;
+    }
+
+    .location-desc{
+        font-size: 10px;
+    }
+
+}
